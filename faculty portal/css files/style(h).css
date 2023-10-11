@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+}
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 240px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: #152259;
+    
+}
+
+.logo img{
+    height: 175px;
+    width: 175px;
+    padding: 40px;
+    position: relative;
+    left: -7px;
+    border-radius: 20%;
+
+}
+.menu{
+    height: 98%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+.menu li{
+    padding: 1rem;
+    margin: 5px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.menu li:hover,
+ .active{
+    background: #2bcbf3ed;
+}
+.menu a {
+    color:#fff;
+    font-size: 14px;
+    text-decoration: none;
+    display:flex;
+    align-items:center;
+    gap: 1rem;
+}
+.menu a span{
+    overflow: hidden;
+}
+.menu a i {
+    font-size: 1.2rem;
+}        
+   /*main content*/
+.main--content{
+    width: 100%;
+    position: relative;
+    background: #ebe9e9;
+    padding: 1rem;
+}
+.header--wrapper img{
+width: 50px;
+height: 50px;
+cursor: pointer;
+border-radius: 50%;
+}
+.header--wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+.header--title{
+    color:#152259;
+    align-items: center;
+    gap: 1rem;
+}
+   /* card container*/
+   .card--container{
+    background: #ebe9e9;
+    padding: 0.1rem;
+    border-radius: 10px;
+    
+}
+.card--wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.notices--card{                            
+   background:#fff ;
+   border-radius: 10px;
+   padding: 1.2rem;
+   width: 300px;
+   height: 150px;
+   display: flex;
+   flex-wrap:wrap;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   transition: all 0.5s ease-in-out;
+   position: relative;
+   
+}
+.notices--card:hover{
+    transform: translateY(-5px);
+}
+.notices--card i{
+    color: #fff;
+    padding: 1rem;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    background: red;
+    
+}
+.notices--card a{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.events--card{                            
+    background:#fff ;
+    border-radius: 10px;
+    padding: 1.2rem;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    
+ }
+ .events--card:hover{
+     transform: translateY(-5px);
+ }
+ .events--card i{
+     color: #fff;
+     padding: 1rem;
+     height: 60px;
+     width: 60px;
+     text-align: center;
+     border-radius: 50%;
+     font-size: 1.5rem;
+     background: green;
+     
+ }
+ .events--card a{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+ .attend--card{                            
+    background:#fff ;
+    border-radius: 10px;
+    padding: 1.2rem;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    
+ }
+ .attend--card:hover{
+     transform: translateY(-5px);
+ }
+ .attend--card i{
+     color: #fff;
+     padding: 1rem;
+     height: 60px;
+     width: 60px;
+     text-align: center;
+     border-radius: 50%;
+     font-size: 1.5rem;
+     background: purple;
+     
+ }
+ .attend--card a{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+ .exam--card{                            
+    background:#fff ;
+    border-radius: 10px;
+    padding: 1.2rem;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    
+ }
+ .exam--card:hover{
+     transform: translateY(-5px);
+ }
+ .exam--card i{
+     color: #fff;
+     padding: 1rem;
+     height: 60px;
+     width: 60px;
+     text-align: center;
+     border-radius: 50%;
+     font-size: 1.5rem;
+     background: #ffd000;
+     
+ }
+ .exam--card a{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.schedule--container {
+    background: #ebe9e9;
+    padding: 0.1rem;
+    border-radius: 10px;
+    position: relative;
+    top: 17px;
+}
+.schedule--wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.tt--card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+    width: 750px;
+}
+.tt--title{
+    
+    align-items: center;
+    gap: 1rem;
+}
+.cal--card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+    width: 500px;
+}
+.cal--title{
+    
+    align-items: center;
+    gap: 1rem;
+}
+.profile--content{
+    background-color:#fff;
+    display: flex;
+    height: 85%;
+    padding: 10px 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.profile--pic{
+    position: relative;
+    left: 40%;
+    top: 10px
+}
+.personal-details{
+    height: 300px;
+    position: relative;
+    top: 270px;
+    border: 3px;
+    justify-content: space-between;
+    margin-left: 3px;
+    
+}
+.personal-details input{
+    width: 200%;
+    font-family: 'Montserrat', sans-serif;
+    background: whitesmoke;
+    outline: none;
+    border: 2px solid rgba(225, 225, 225, .2);
+    border-radius: 10px;
+    
+}
+.professional-details{
+    height: 300px;
+    position: relative;
+    top: 270px;
+    left: 300px;
+    
+}
+.professional-details input{
+    width: 200%;
+    font-family: 'Montserrat', sans-serif;
+    background: whitesmoke;
+    outline: none;
+    border: 2px solid rgba(225, 225, 225, .2);
+    border-radius: 10px;
+    
+}
+.profile-button {
+    position: relative;
+    top: 500px;
+    background-color:#ebe9e9;
+    border: 7px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.profile-button:hover {
+    background: 	#D3D3D3;
+}
+
+
+.labels {
+    font-size: 16px
+}

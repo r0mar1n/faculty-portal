@@ -17,27 +17,21 @@
         </div>
           <ul class="menu" >
             <li class="active">
-                <a href="#">
+                <a href="./dashboard.html">
                     <i class="fa fa-home"></i>
                     <span>Home</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="./profile.html">
                     <i class="fa fa-user-circle-o"></i>
                     <span>Profile</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="./leave.html">
                     <i class="fa fa-calendar-o"></i>
                     <span>Leaves</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa fa-folder"></i>
-                    <span>Documents</span>
                 </a>
             </li>
             <li>
@@ -47,7 +41,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="./login.html">
                     <i class="fa fa-sign-out"></i>
                     <span>Logout</span>
                 </a>
@@ -65,42 +59,371 @@
             </div>
             <div class="card--container">
 
-             <div class="card--wrapper">
-                <div class="notices--card">
-                    <i class="fa fa-bell-o"></i>
-                    <h3 class="main--title"> Notices</h3>
-                    <a href="#" class="card-link"></a>
-                </div>
-                <div class="events--card">
-                    <i class="fa fa-calendar-check-o"></i>
-                    <h3 class="main--title"> Events</h3>
-                    <a href="#" class="card-link"></a>
-                </div>
-                <div class="attend--card">
-                    <i class="fa fa-calendar"></i>
-                    <h3 class="main--title"> Attendance</h3>
-                    <a href="#" class="card-link"></a>
-                </div>
-                <div class="exam--card">
-                    <i class="fa fa-file-text"></i>
-                    <h3 class="main--title">Exams</h3>
-                    <a href="#" class="card-link"></a>
-                </div>
+               <div class="card--wrapper">
+            
+                  <div class="notices--card" onclick="showPopupNotification()">
+                      <i class="fa fa-bell-o"></i>
+                       <h3 class="main--title"> Notices</h3>
+                  </div>
+                 <div class="notice-popup" id="popup-notification1">
+                    
+                 <div class="popup-header">
+                    <h3>  Recent Notices </h3><button onclick="hidePopupNotification()">x</button>
+                
+                 </div> <hr>
+                      <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                      </div>
+                </div>       
+                <script>
+                    function showPopupNotification() {
+                      var popupNotification = document.getElementById('popup-notification1');
+                      popupNotification.style.display = 'block';
+                    }
+                  
+                    function hidePopupNotification() {
+                      var popupNotification = document.getElementById('popup-notification1');
+                      popupNotification.style.display = 'none';
+                    }
+                  </script>
+                  
+                
+<!-- Events Card -->
+<div class="events--card" onclick="showPopupEvent()">
+    <i class="fa fa-calendar-check-o"></i>
+    <h3 class="main--title">Events</h3>
+</div>
+
+<!-- Events Popup -->
+<div class="event-popup" id="popup-event1">
+    <div class="popup-header">
+        <h3>Upcoming Events</h3>
+        <button onclick="hidePopupEvent()">x</button>
+    </div>
+    <hr>
+    <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+</div>
+
+<script>
+    function showPopupEvent() {
+        var popupEvent = document.getElementById('popup-event1');
+        popupEvent.style.display = 'block';
+    }
+
+    function hidePopupEvent() {
+        var popupEvent = document.getElementById('popup-event1');
+        popupEvent.style.display = 'none';
+    }
+</script>
+
+                <!-- Attendance Card -->
+<div class="attend--card" onclick="showPopupAttendance()">
+    <i class="fa fa-calendar"></i>
+    <h3 class="main--title">Attendance</h3>
+</div>
+
+<!-- Attendance Popup -->
+<div class="attendance-popup" id="popup-attendance1">
+    <div class="popup-header">
+        <h3>Attendance Details</h3>
+        <button onclick="hidePopupAttendance()">x</button>
+    </div>
+    <hr>
+    <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+</div>
+
+<script>
+    function showPopupAttendance() {
+        var popupAttendance = document.getElementById('popup-attendance1');
+        popupAttendance.style.display = 'block';
+    }
+
+    function hidePopupAttendance() {
+        var popupAttendance = document.getElementById('popup-attendance1');
+        popupAttendance.style.display = 'none';
+    }
+</script>
+
+                <!-- Exams Card -->
+<div class="exam--card" onclick="showPopupExams()">
+    <i class="fa fa-pencil"></i>
+    <h3 class="main--title">Exams</h3>
+</div>
+
+<!-- Exams Popup -->
+<div class="exams-popup" id="popup-exams1">
+    <div class="popup-header">
+        <h3>Exam Information</h3>
+        <button onclick="hidePopupExams()">x</button>
+    </div>
+    <hr>
+    <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+</div>
+
+<script>
+    function showPopupExams() {
+        var popupExams = document.getElementById('popup-exams1');
+        popupExams.style.display = 'block';
+    }
+
+    function hidePopupExams() {
+        var popupExams = document.getElementById('popup-exams1');
+        popupExams.style.display = 'none';
+    }
+</script>
+
              </div>   
             </div>
             <div class="schedule--container">
                 <div class="schedule--wrapper">
                    <div class="tt--card" >
-                     <div class="tt--title">
-                        <span><h3>Time-Table</h3></span>
-                     </div>
-                     <img src="./images/timetable.png" width="700" height="500"/>
-                   </div> 
+                      <div class="tt--title">
+                         <span><h3>Time-Table</h3></span>
+                      </div>
+                     
+                      <div class="w-100 mx-auto mb-6 text-center"> <!-- Update width class to w-100 -->
+                       
+                        <div class="row">
+                        <div class="col-md-12">
+                        <div class="schedule-table">
+                        <table class="table bg-white">
+                        <thead>
+                        <tr>
+                        <th>Routine</th>
+                        <th>10 am</th>
+                        <th>11 am</th>
+                        <th>03 pm</th>
+                        <th>05 pm</th>
+                        <th class="last">07 pm</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                        <td class="day">Sunday</td>
+                        <td class="active">
+                        <h4>Weight Loss</h4>
+                        <p>10 am - 11 am</p>
+                        <div class="hover">
+                        <h4>Weight Loss</h4>
+                        <p>10 am - 11 am</p>
+                        <span>Wayne Ponce</span>
+                        </div>
+                        </td>
+                        <td></td>
+                        <td class="active">
+                        <h4>Yoga</h4>
+                        <p>03 pm - 04 pm</p>
+                        <div class="hover">
+                        <h4>Yoga</h4>
+                        <p>03 pm - 04 pm</p>
+                        <span>Francisco Watt</span>
+                        </div>
+                        </td>
+                        <td class="active">
+                        <h4>Boxing</h4>
+                        <p>05 pm - 06 pm</p>
+                        <div class="hover">
+                        <h4>Boxing</h4>
+                        <p>05 pm - 046am</p>
+                        <span>Charles King</span>
+                        </div>
+                        </td>
+                        <td></td>
+                        </tr>
+                        <tr>
+                        <td class="day">Monday</td>
+                        <td></td>
+                        <td class="active">
+                        <h4>Cycling</h4>
+                        <p>11 am - 12 pm</p>
+                        <div class="hover">
+                        <h4>Cycling</h4>
+                        <p>11 am - 12 pm</p>
+                        <span>Tabitha Potter</span>
+                        </div>
+                        </td>
+                        <td class="active">
+                        <h4>Karate</h4>
+                        <p>03 pm - 05 pm</p>
+                        <div class="hover">
+                        <h4>Karate</h4>
+                        <p>03 pm - 05 pm</p>
+                        <span>Lester Gray</span>
+                        </div>
+                        </td>
+                        <td></td>
+                        <td class="active">
+                        <h4>Crossfit</h4>
+                        <p>07 pm - 08 pm</p>
+                        <div class="hover">
+                        <h4>Crossfit</h4>
+                        <p>07 pm - 08 pm</p>
+                        <span>Candi Yip</span>
+                        </div>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td class="day">Tuesday</td>
+                        <td class="active">
+                        <h4>Spinning</h4>
+                        <p>10 am - 11 am</p>
+                        <div class="hover">
+                        <h4>Spinning</h4>
+                        <p>10 am - 11 am</p>
+                        <span>Mary Cass</span>
+                        </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td class="active">
+                        <h4>Bootcamp</h4>
+                        <p>05 pm - 06 pm</p>
+                        <div class="hover">
+                        <h4>Bootcamp</h4>
+                        <p>05 pm - 06 pm</p>
+                        <span>Brenda Mastropietro</span>
+                        </div>
+                        </td>
+                        <td class="active">
+                        <h4>Boxercise</h4>
+                        <p>07 pm - 08 pm</p>
+                        <div class="hover">
+                        <h4>Boxercise</h4>
+                        <p>07 pm - 08 pm</p>
+                        <span>Marlene Bruce</span>
+                        </div>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td class="day">Wednesday</td>
+                        <td class="active">
+                        <h4>Body Building</h4>
+                        <p>10 am - 12 pm</p>
+                        <div class="hover">
+                        <h4>Body Building</h4>
+                        <p>10 am - 12 pm</p>
+                        <span>Brenda Hester</span>
+                        </div>
+                        </td>
+                        <td></td>
+                        <td class="active">
+                        <h4>Dance</h4>
+                        <p>03 pm - 05 pm</p>
+                        <div class="hover">
+                        <h4>Dance</h4>
+                        <p>03 pm - 05 pm</p>
+                        <span>Brian Ashworth</span>
+                        </div>
+                        </td>
+                        <td></td>
+                        <td class="active">
+                        <h4>Health</h4>
+                        <p>07 pm - 08 pm</p>
+                        <div class="hover">
+                        <h4>Health</h4>
+                        <p>07 pm - 08 pm</p>
+                        <span>Mark Croteau</span>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td class="day">Thursday</td>
+                        <td></td>
+                        <td class="active">
+                        <h4>Bootcamp</h4>
+                        <p>11 am - 12 pm</p>
+                        <div class="hover">
+                        <h4>Bootcamp</h4>
+                        <p>1 am - 12 pm</p>
+                        <span>Elisabeth Schreck</span>
+                        </div>
+                        </td>
+                        <td></td>
+                        <td class="active">
+                        <h4>Boday Building</h4>
+                        <p>05 pm - 06 pm</p>
+                        <div class="hover">
+                        <h4>Boday Building</h4>
+                        <p>05 pm - 06 pm</p>
+                        <span>Edward Garcia</span>
+                        </div>
+                        </td>
+                        <td></td>
+                        </tr>
+                        <tr>
+                        <td class="day">Friday</td>
+                        <td class="active">
+                        <h4>Racing</h4>
+                        <p>10 am - 11 am</p>
+                        <div class="hover">
+                        <h4>Racing</h4>
+                        <p>10 am - 11 am</p>
+                        <span>Jackie Potts</span>
+                        </div>
+                        </td>
+                        <td></td>
+                        <td class="active">
+                        <h4>Energy Blast</h4>
+                        <p>03 pm - 05 pm</p>
+                        <div class="hover">
+                        <h4>Energy Blast</h4>
+                        <p>03 pm - 05 pm</p>
+                        <span>Travis Brown</span>
+                        </div>
+                        </td>
+                        <td></td>
+                        <td class="active">
+                        <h4>Jumping</h4>
+                        <p>07 pm - 08 pm</p>
+                        <div class="hover">
+                        <h4>Jumping</h4>
+                        <p>07 pm - 08 pm</p>
+                        <span>Benjamin Barnett</span>
+                        </div>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td class="day">Satarday</td>
+                        <td></td>
+                        <td></td>
+                        <td class="active">
+                        <h4>Aerobics</h4>
+                        <p>03 pm - 04 pm</p>
+                        <div class="hover">
+                        <h4>Aerobics</h4>
+                        <p>03 pm - 04 pm</p>
+                        <span>Andre Walls</span>
+                        </div>
+                        </td>
+                        <td class="active">
+                        <h4>Cycling</h4>
+                        <p>05 pm - 06 pm</p>
+                        <div class="hover">
+                        <h4>Cycling</h4>
+                        <p>05 pm - 06 pm</p>
+                        <span>Margaret Thomas</span>
+                        </div>
+                        </td>
+                        <td></td>
+                        </tr>
+                        </tbody>
+                        </table>
+                       </div> 
+                        </div>
+                        </div>
+                        </div>
+                     </div> 
                    <div class="cal--card">
-                    <div class="cal--title">
-                        <span><h3>Calendar</h3></span>
+                      <div class="cal--title">
+                          <span><h3>Calendar</h3></span>
                         
-                    </div>
+                      </div>
 
                 </div>
                 </div>

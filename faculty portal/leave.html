@@ -3,9 +3,11 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Dashboard</title>
+        <title>Leaves</title>
         <meta name="description" content="">
+        <link rel="stylesheet" href="./css files/style(leave).css">
         <link rel="stylesheet" href="./css files/style(h).css">
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" type="image/jpg" href="./images/logo.jpg" />
@@ -36,33 +38,28 @@
     <body>
      <div class="sidebar">
         <div class="logo">
-        <img class="logo-img" src="c:\Users\CHRIS JOSEPH MICHAEL\OneDrive\Desktop\logo.jpg" width="100" height="100" >
+        <img class="logo-img" src="./images/logo.jpg" width="100" height="100" >
         </div>
           <ul class="menu" >
-            <li class="active">
-                <a href="#">
+            <li>
+                <a href="./dashboard.html">
                     <i class="fa fa-home"></i>
                     <span>Home</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="./profile.html">
                     <i class="fa fa-user-circle-o"></i>
                     <span>Profile</span>
                 </a>
             </li>
-            <li>
-                <a href="#">
+            <li class="active">
+                <a href="./leave.html">
                     <i class="fa fa-calendar-o"></i>
                     <span>Leaves</span>
                 </a>
             </li>
-            <li>
-                <a href="#">
-                    <i class="fa fa-folder"></i>
-                    <span>Documents</span>
-                </a>
-            </li>
+           
             <li>
                 <a href="#">
                     <i class="fa fa-money"></i>
@@ -70,13 +67,24 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="./login.html">
                     <i class="fa fa-sign-out"></i>
                     <span>Logout</span>
                 </a>
             </li>
           </ul>
-        </div> <div class="container mt-5 m-lg-auto p-5 shadow">
+        </div> 
+        <div class="main--content">
+          <div class="header--wrapper">
+              <div class="header--title">
+                  <span><h2>Profile</h2></span>
+               </div>
+              <div class="user--info">
+                      <img src="./images/user.png"  /> 
+              </div>
+              
+          </div>
+        
             <section class="leave-request">
               <header class="text-center mb-5">
                 <i
@@ -95,17 +103,17 @@
                     <input
                       type="text"
                       class="form-control"
-                      placeholder="First Name"
-                      id="FirstName"
+                      placeholder="Full Name"
+                      id="FullName"
                     />
                   </div>
-      
+                  <label class="form-label">Reason for leave</label>
                   <div class="col">
                     <input
                       type="text"
                       class="form-control"
-                      placeholder="Last Name"
-                      id="LastName"
+                      placeholder="specify reason for availing leave"
+                      id="Reason"
                     />
                   </div>
                 </div>
@@ -147,18 +155,17 @@
                   </div>
                 </div>
                 <button
-                  type="submit
-                "
-                  class="btn btn-primary w-100 shadow-sm"
-                >
+                  type="submit"
+                  class="btn btn-primary w-100 shadow-sm">
                   Submit
                 </button>
               </form>
             </section>
           </div>
+        </div>
           <!-- Create leave request -->
       
-          http://main.js
+         
        
     </body>
 </html>

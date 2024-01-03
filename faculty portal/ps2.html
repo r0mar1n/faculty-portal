@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payslip</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #payslip-tab {
+            display: none;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px;
+            width: 100%;
+        }
+        table{
+width: 100%;
+border-collapse:collapse;
+border: 1px solid black;
+}
+table td{line-height:25px;padding-left:15px;}
+table th{background-color:#fbc403; color:#363636;}
+        #toggle-btn {
+            cursor: pointer;
+            color: #007bff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="toggle-btn" onclick="togglePayslip()">Show Payslip</div>
+    <div id="payslip-tab">
+<table border="1">
+<tr>
+<th>Personel NO:</th>
+<td>0123456</td>
+<th>Name</th>
+<td>Chandra</td>
+</tr>
+<!-----2 row--->
+<tr>
+<th>Bank</th>
+<td>x0x0x0</td>
+<th>Bank A/c No.</th>
+<td>0x2x6x25x6</td>
+</tr>
+<!------3 row---->
+<tr>
+<th>DOB</th>
+<td>23/02/xxxx</td>
+<th>Lop Days</th>
+<td>0</td>
+</tr>
+<!------4 row---->
+<tr>
+<th>PF No.</th>
+<td>26123456</td>
+<th>STD days</th>
+<td>30</td>
+</tr>
+<!------5 row---->
+<tr>
+<th>Location</th>
+<td>India</td>
+<th>Working Days</th>
+<td>30</td>
+</tr>
+<!------6 row---->
+<tr>
+<th>Department</th>
+<td>IT</td>
+<th>Designation</th>
+<td>Designer</td>
+</tr>
+
+</table>
+
+<br/>
+<table border="1">
+<tr>
+<th >Earnings</th>
+<th>Amount</th>
+<th >Deductions</th>
+<th>Amount</th>
+</tr>
+<tr>
+<td>Basic</td>
+<td>29000</td>
+<td>provident fund</td>
+<td>1900</td>
+</tr>
+<tr>
+<td>House Rent Allowance</td>
+<td>2000</td>
+<td>professional tax</td>
+<td>600</td>
+</tr>
+<tr>
+<td>special Allowance</td>
+<td>400</td>
+<td>Income tax</td>
+<td>500</td>
+</tr>
+<tr>
+    <td>conveyance</td>
+    <td>3000</td>
+    <td>ADD Special allowance</td>
+    <td>2000</td>
+  </tr>
+  <tr>
+    <td>shift Allowance</td>
+    <td>1000</td>
+    <td>bonus</td>
+    <td>500</td>
+  </tr>
+  <tr>
+    <td>medical Allowance</td>
+    <td>600</td>
+    <td></td> <!-- Add an empty cell for consistency -->
+    <td></td> <!-- Add an empty cell for consistency -->
+  </tr>
+
+<tr>
+<th>Gross Earnings</th>
+<td>Rs.38500</td>
+<td >Gross Deductions</td>
+<td>Rs.3000</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>NET PAY</strong></td>
+<td>Rs.35500</td>
+<td></td>
+</tr>
+</table>
+
+        <!-- Close button to hide the payslip -->
+        <button onclick="hidePayslip()">Close</button>
+    </div>
+
+    <script>
+        function togglePayslip() {
+            var payslipTab = document.getElementById('payslip-tab');
+            payslipTab.style.display = (payslipTab.style.display === 'none') ? 'block' : 'none';
+        }
+
+        function hidePayslip() {
+            var payslipTab = document.getElementById('payslip-tab');
+            payslipTab.style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>

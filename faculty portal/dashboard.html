@@ -11,44 +11,48 @@
         <link rel="icon" type="image/jpg" href="./images/logo.jpg" />
     </head>
     <body>
+           <!-- sidebar menu start -->
      <div class="sidebar">
         <div class="logo">
         <img class="logo-img" src="./images/logo.jpg" width="100" height="100" >
         </div>
           <ul class="menu" >
             <li class="active">
-                <a href="./dashboard.html">
+                <a href="./dashboard.html"> <!-- home tab -->
                     <i class="fa fa-home"></i>
                     <span>Home</span>
                 </a>
             </li>
             <li>
-                <a href="./profile.html">
+                <a href="./profile.html"> <!-- profile tab -->
                     <i class="fa fa-user-circle-o"></i>
                     <span>Profile</span>
                 </a>
             </li>
             <li>
-                <a href="./leave.html">
+                <a href="./leave.html"> <!-- leaves tab -->
                     <i class="fa fa-calendar-o"></i>
                     <span>Leaves</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#"><!-- payslip tab -->
                     <i class="fa fa-money"></i>
                     <span>Salary Slip</span>
                 </a>
             </li>
             <li>
-                <a href="./login.html">
+                <a href="./login.html"> <!--logout-->
                     <i class="fa fa-sign-out"></i>
                     <span>Logout</span>
                 </a>
             </li>
           </ul>
         </div>
+        <!-- sidebar menu end -->
+        <!-- main content start -->
         <div class="main--content">
+            <!-- page header start -->
             <div class="header--wrapper">
                 <div class="header--title">
                    <span><h2>Home</h2></span>
@@ -57,14 +61,17 @@
                     <img src="./images/user.png"  /> 
                 </div>
             </div>
+            <!-- page header end -->
+            <!--cards conatiner start -->
             <div class="card--container">
 
                <div class="card--wrapper">
-            
+                 <!-- notices card -->
                   <div class="notices--card" onclick="showPopupNotification()">
                       <i class="fa fa-bell-o"></i>
                        <h3 class="main--title"> Notices</h3>
                   </div>
+                  <!-- notices popup -->
                  <div class="notice-popup" id="popup-notification1">
                     
                  <div class="popup-header">
@@ -181,8 +188,12 @@
 
              </div>   
             </div>
+            <!-- card container end -->
+            <!-- schedule container -->
             <div class="schedule--container">
+                <!-- schedule wrapper -->
                 <div class="schedule--wrapper">
+                    <!-- time table card -->
                    <div class="tt--card" >
                       <div class="tt--title">
                          <span><h3>Time-Table</h3></span>
@@ -418,20 +429,25 @@
                         </div>
                         </div>
                         </div>
-                     </div> 
+                     </div>
+                     <!-- timetable conatiner end--> 
+                     <!-- calendar card -->
                    <div class="cal--card">
                       <div class="cal--title">
                           <span><h3>Calendar</h3></span>
                         
                       </div>
-
+                   </div>
+                   <!-- calendar card end -->
                 </div>
-                </div>
+                  <!--schedule wrapper end -->
+            </div>
+              <!--schedule container -->
                 
                     
                 
-            </div>
+        </div><!--main content end -->
             
-        </div>
+        
     </body>
 </html>

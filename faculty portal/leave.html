@@ -36,45 +36,49 @@
     <title>Document</title>
     </head>
     <body>
+        <!--sidebar menu start -->
      <div class="sidebar">
         <div class="logo">
         <img class="logo-img" src="./images/logo.jpg" width="100" height="100" >
         </div>
           <ul class="menu" >
             <li>
-                <a href="./dashboard.html">
+                <a href="./dashboard.html"> <!-- dashboard tab -->
                     <i class="fa fa-home"></i>
                     <span>Home</span>
                 </a>
             </li>
             <li>
-                <a href="./profile.html">
+                <a href="./profile.html"> <!-- profile tab -->
                     <i class="fa fa-user-circle-o"></i>
                     <span>Profile</span>
                 </a>
             </li>
             <li class="active">
-                <a href="./leave.html">
+                <a href="./leave.html"> <!--leaves tab -->
                     <i class="fa fa-calendar-o"></i>
                     <span>Leaves</span>
                 </a>
             </li>
            
             <li>
-                <a href="#">
+                <a href="#"> <!-- payslip tab-->
                     <i class="fa fa-money"></i>
                     <span>Salary Slip</span>
                 </a>
             </li>
             <li>
-                <a href="./login.html">
+                <a href="./login.html"> <!-- logout -->
                     <i class="fa fa-sign-out"></i>
                     <span>Logout</span>
                 </a>
             </li>
           </ul>
-        </div> 
+        </div>
+        <!--sidebar menu end -->
+        <!-- main content start -->
         <div class="main--content">
+            <!--page header -->
           <div class="header--wrapper">
               <div class="header--title">
                   <span><h2>Profile</h2></span>
@@ -84,7 +88,8 @@
               </div>
               
           </div>
-        
+        <!-- page header end -->
+        <!-- form header -->
             <section class="leave-request">
               <header class="text-center mb-5">
                 <i
@@ -93,6 +98,7 @@
                 ></i>
                 <h1 class="display-1 h1">Leave request form</h1>
               </header>
+         <!--form header end -->
               <!-- Form -->
       
               <form id="LeaveRequestForm">
@@ -107,6 +113,8 @@
                       id="FullName"
                     />
                   </div>
+                      <!-- reason for leave -->
+                <div class="row mb-3">
                   <label class="form-label">Reason for leave</label>
                   <div class="col">
                     <input
@@ -117,8 +125,8 @@
                     />
                   </div>
                 </div>
-                <!--  Employee ID Remaining vacation days-->
-      
+               
+                <!--  Employee ID-->
                 <div class="row mb-3">
                   <div class="col">
                     <label class="form-label">Employee ID</label
@@ -129,6 +137,7 @@
                       placeholder="Your Employee ID"
                     />
                   </div>
+                      <!-- Remaining vacation days-->
                   <div class="col">
                     <label class="form-label">Remaining leave days</label
                     ><input
@@ -139,6 +148,7 @@
                     />
                   </div>
                 </div>
+                 <!--  start date-->
                 <div class="row mb-3">
                   <div class="col">
                     <label class="form-label"
@@ -147,6 +157,7 @@
                       ></label
                     ><input type="date" class="form-control" id="StartDate" />
                   </div>
+                     <!-- end date-->
                   <div class="col">
                     <label class="form-label"
                       >End date
@@ -154,6 +165,7 @@
                     ><input type="date" class="form-control" id="EndDate" />
                   </div>
                 </div>
+                 <!-- submit form-->
                 <button
                   type="submit"
                   class="btn btn-primary w-100 shadow-sm">
@@ -163,9 +175,10 @@
             </section>
           </div>
         </div>
+         <!--  End of form-->
           <!-- Create leave request -->
       
          
-       
+        <!-- -->
     </body>
 </html>

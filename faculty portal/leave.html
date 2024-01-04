@@ -10,7 +10,7 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="icon" type="image/jpg" href="./images/logo.jpg" />
+        <link rel="icon" type="image/jpg" href="./images/logo (1).jpg" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Bootstrap CDN --><link
@@ -34,6 +34,20 @@
       referrerpolicy="no-referrer"
     />
     <title>Document</title>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Add an event listener to the form submission
+        document.getElementById('LeaveRequestForm').addEventListener('submit', function (event) {
+          event.preventDefault(); // Prevent the form from submitting the traditional way
+
+          // Show a popup message
+          alert("Your leave application has been submitted and is being processed. Kindly wait for a response.");
+
+          // You can also close the popup and reset the form if needed
+          // document.getElementById('LeaveRequestForm').reset();
+        });
+      });
+    </script>
     </head>
     <body>
         <!--sidebar menu start -->
